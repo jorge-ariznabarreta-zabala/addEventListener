@@ -1,18 +1,18 @@
-// window.onload=()=>{
-// };
 let buttonClick = document.getElementById("button");
-console.log(buttonClick);
+//console.log(buttonClick);
 let checkboxClick= document.getElementById("checkeado");
-console.log(checkboxClick);
+//console.log(checkboxClick);
 buttonClick.addEventListener("click", ()=>{
     EnsenaLista()
 });
 checkboxClick.addEventListener("change", (evento)=>{
-    console.log(evento);
+    //console.log(evento);
     if(checkboxClick.checked){
         buttonClick.disabled=false;
+    } else{
+        buttonClick.disabled=true;
     };
-    console.log(buttonClick.disabled);
+    //console.log(buttonClick.disabled);
 });
 
 function EnsenaLista(){
