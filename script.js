@@ -1,19 +1,19 @@
-window.onload=()=>{
-    let buttonClick = document.getElementById("button");
-    console.log(buttonClick);
-    let checkboxClick= document.getElementById("checkeado");
-    console.log(checkboxClick);
-    buttonClick.addEventListener("click", ()=>{
-        EnsenaLista()
-    });
-    checkboxClick.addEventListener("change", (evento)=>{
-        console.log(evento);
-        if(checkboxClick.checked){
-            buttonClick.disabled=false;
-        };
-        console.log(buttonClick.disabled);
-    });
-};
+// window.onload=()=>{
+// };
+let buttonClick = document.getElementById("button");
+console.log(buttonClick);
+let checkboxClick= document.getElementById("checkeado");
+console.log(checkboxClick);
+buttonClick.addEventListener("click", ()=>{
+    EnsenaLista()
+});
+checkboxClick.addEventListener("change", (evento)=>{
+    console.log(evento);
+    if(checkboxClick.checked){
+        buttonClick.disabled=false;
+    };
+    console.log(buttonClick.disabled);
+});
 
 function EnsenaLista(){
     let result = document.getElementById("resultado");
